@@ -17,13 +17,13 @@ theme:
   palette:
     - scheme: default
       toggle:
-        icon: material/toggle-switch-off-outline 
+        icon: material/brightness-1
         name: Switch to dark mode
       primary: indigo
       accent: red 
     - scheme: slate 
       toggle:
-        icon: material/toggle-switch
+        icon: material/brightness-5
         name: Switch to light mode    
       primary: deep purple
       accent: lime
@@ -34,10 +34,11 @@ extra:
       link: https://github.com/FRCTeam4500
     - icon: fontawesome/brands/instagram
       link: https://www.instagram.com/team4500/
-    - icon: fontawesome/brands/google
+    - icon: material/view-gallery-outline
       link: https://www.robohounds.com/
 
 markdown_extensions:
+  - md_in_html
   - pymdownx.highlight:
       anchor_linenums: true
   - pymdownx.inlinehilite
