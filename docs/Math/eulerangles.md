@@ -1,5 +1,6 @@
 # Euler's Angles
 
+## Finding the Overall Angle of An Object using Pitch, Roll, and Yaw
 $$\cos^{-1} \begin{pmatrix}
     \vec{n_1} \begin{bmatrix}
     \cos \psi & -\sin \psi & 0 \\

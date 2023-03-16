@@ -32,7 +32,7 @@ theme:
       accent: lime
 
 extra:
-  homepage: http://frcteam4500.github.io/
+  homepage: https://frcteam4500.github.io/
   social:
     - icon: fontawesome/brands/github
       link: https://github.com/FRCTeam4500
