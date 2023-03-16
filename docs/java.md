@@ -1,6 +1,8 @@
-# An Introduction to Java
+# Java
 
-## Variables
+## The Basics
+
+### Variables
 For the scope of programming the robot, the following are the most important variables.
 
 | Variable | Description                                                                               |
@@ -22,7 +24,7 @@ boolean isRaining = false;
 String username = "ch1cken$1ayer123";
 ```
 
-## Operators
+### Operators
 | Operator    | Use                                                           |
 |----------   |---------------------------------------------------------------|
 | > and >=    | Greater than and greater than or equal to                     |
@@ -41,7 +43,7 @@ String username = "ch1cken$1ayer123";
 
 For more information, view: [arithmetic operators](https://docs.oracle.com/javase/tutorial/java/nutsandbolts/op1.html) and [equality operators](https://docs.oracle.com/javase/tutorial/java/nutsandbolts/op2.html)
 
-## If statements
+### If statements
 
 ```java
 boolean isRaining = false;
@@ -76,7 +78,7 @@ if(temperature < 32) {
 }
 ```
 
-## For loops
+### For loops
 
 ```java
 
@@ -105,7 +107,7 @@ for(int x = 0; x < 3; x++) {
 }
 ```
 
-## Arrays
+### Arrays
 
 ```java
 int[] myArray;
@@ -119,8 +121,6 @@ System.out.println(myArray[1]); // prints 2
 double[] myDoubleArray = new double[] {2.31, -1.26, 3.14, 2.71, 7.1};
 System.out.println(myDoubleArray[0]); // prints 2.31
 System.out.println(myDoubleArray[myDoubleArray.length-1]); // prints 7.1
-
-
 
 int[][] multiDimArray = new int[][] { {2, 4}, {7, 1}, {9, 3} };
 System.out.println(multiDimArray[1][0]); // prints 7
@@ -139,11 +139,9 @@ for(int c : counting) { // Same as the previous loop but shorter
 }
 ```
 
-## Classes
-
+### Classes
 ```java
 public class Profile {
-
     // Instance variables
     private String username;
     private String password;
@@ -171,6 +169,52 @@ public class Profile {
 }
 ```
 
+The Profile class represents a user profile that has a username, password, and age. Here's a more detailed breakdown of each section of the code:
+
+Instance variables:
+
+```java
+private String username;
+private String password;
+private int age;
+```
+
+These are the instance variables for the Profile class. They are marked as private, which means they can only be accessed within the class. username and password are of type String and represent the user's login information, while age is an int representing the user's age.
+
+Constructor:
+```java
+public Profile(String username, String password, int age) {
+    this.username = username;
+    this.password = password;
+    this.age = age;
+}
+```
+This is the constructor for the Profile class. It takes three parameters (username, password, and age) and assigns them to the corresponding instance variables. The this keyword is used to refer to the current object (i.e., the Profile instance being created) and to disambiguate the instance variable from the parameter with the same name.
+
+Getters and setters:
+
+```java
+public String getAge() { return age; }
+public void setAge(int age) { this.age = age; }
+```
+
+These are the getter and setter methods for the age instance variable. The getter method `getAge()` returns the age value, while the setter method `setAge()` takes an int parameter and sets the age value to that parameter. The this keyword is used to disambiguate the instance variable from the parameter with the same name.
+
+Functions:
+
+```java
+public boolean login(String username, String password) {
+    if(this.username.equals(username) && this.password.equals(password)) {
+        return true;
+    } else {
+        return false;
+    }
+}
+```
+This is the `login()` method, which takes two parameters (username and password) and returns a boolean indicating whether the supplied login information matches the Profile's username and password. The method compares the supplied username and password to the instance variables username and password using the `equals()` method of the String class. If both match, the method returns true; otherwise, it returns false.
+
+An instance of this class can be created in the following manner:
+
 ```java
 Profile jim = new Profile("Jim", "123", 21);
 System.out.println(jim.login("Alice", "supersecurepassword123")); // Prints false
@@ -181,3 +225,10 @@ jill.setAge(31);
 jill.setUsername("Jill");
 jill.setPassword("aXr2Lp?^2R&T");
 ```
+
+## Advanced Java Principles
+
+### Lambda Expressions
+
+#### Suppliers, Consumers, and Subscribers
+
