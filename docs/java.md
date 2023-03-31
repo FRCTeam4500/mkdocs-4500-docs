@@ -229,6 +229,12 @@ jill.setPassword("aXr2Lp?^2R&T");
 ## Advanced Java Principles
 
 ### Lambda Expressions
+A lambda expression is a short block of code which takes in parameters and returns a value. Lambda expressions are similar to methods, but they do not need a name and they can be implemented right in the body of a method.
 
-#### Suppliers, Consumers, and Subscribers
+#### Suppliers
+
+
+#### Consumers
+
+#### Subscribers
 

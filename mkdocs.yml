@@ -32,6 +32,7 @@ theme:
       accent: lime
 
 extra:
+  generator: false
   homepage: https://frcteam4500.github.io/
   social:
     - icon: fontawesome/brands/github
@@ -40,6 +41,9 @@ extra:
       link: https://www.instagram.com/team4500/
     - icon: material/view-gallery-outline
       link: https://www.robohounds.com/
+
+repo_url: https://www.github.com/FRCTeam4500/mkdocs-4500-docs
+repo_name: mkdocs-4500-docs
 
 markdown_extensions:
   - md_in_html
