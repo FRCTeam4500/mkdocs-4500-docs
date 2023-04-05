@@ -8,9 +8,10 @@ theme:
     - navigation.tabs
     - navigation.sections
     - navigation.expand
-    - toc.integrate
+    # - toc.integrate
     - toc.follow
     - navigation.top
+    - pdf-export
     - search.suggest
     - search.highlight
     - content.tabs.link

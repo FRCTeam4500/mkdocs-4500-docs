@@ -1,3 +1,8 @@
+---
+hide:
+    - navigation
+---
+
 # Java
 
 ## The Basics

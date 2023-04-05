@@ -2,9 +2,6 @@
 hide:
   - navigation
   - toc
-
-nav:
-  - java
 ---
 
 # Team 4500
