@@ -74,7 +74,7 @@ public void initSendable(SendableBuilder builder) {
 }
 ```
 
-A [lambda](../java.md#lambda-expressions) expression `() ->` is used in place of the value itself, because the value needs to update. The type of the argument needs to be that of a [supplier](../java.md#suppliers-consumers-and-subscribers).
+A [lambda](../../java.md#lambda-expressions) expression `() ->` is used in place of the value itself, because the value needs to update. The type of the argument needs to be that of a [supplier](../../java.md#suppliers).
 
 Additionally, there are software tools such as the WPILib's SmartDashboard or CTRE's **Phoenix Tuner** that can be used to visualize the motor's position and assist with determining the desired position. These tools can also be useful for fine-tuning the motor's position control during testing and competition.
 
