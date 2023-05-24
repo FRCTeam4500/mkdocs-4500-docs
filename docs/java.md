@@ -63,6 +63,9 @@ if(isRaining == true && isCold == false) {
 }
 ```
 
+The `&&` allows for compound if statements. It is simply saying "if condition 1 AND condition 2 then..."
+Similarly, the `||` allows us to say OR.
+
 ```java
 int temperature = 32;
 boolean willFreeze = false;
@@ -111,6 +114,8 @@ for(int x = 0; x < 3; x++) {
     }
 }
 ```
+
+
 
 ### Arrays
 
@@ -235,11 +240,4 @@ jill.setPassword("aXr2Lp?^2R&T");
 
 ### Lambda Expressions
 A lambda expression is a short block of code which takes in parameters and returns a value. Lambda expressions are similar to methods, but they do not need a name and they can be implemented right in the body of a method.
-
-#### Suppliers
-
-
-#### Consumers
-
-#### Subscribers
 

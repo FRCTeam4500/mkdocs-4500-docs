@@ -6,16 +6,16 @@ It's recommended to also review the list of `known issues <known-issues>`.
 
 ## Importing Projects from Previous Years
 
-Due to internal GradleRIO changes, it is necessary to update projects from previous years. After `Installing WPILib for 2023 </docs/zero-to-robot/step-2/wpilib-setup>`, any 2022 projects must be `imported </docs/software/vscode-overview/importing-gradle-project>` to be compatible.
+Due to internal GradleRIO changes, it is necessary to update projects from previous years. After `Installing WPILib for 2023`, any 2022 projects must be `imported` to be compatible.
 
 ## Major Changes (Java/C++)
 
 These changes contain *some* of the major changes to the library that it's important for the user to recognize. This does not include all of the breaking changes, see the other sections of this document for more changes.
 
--   `NetworkTables </docs/software/networktables/networktables-intro>` has been completely rewritten as version 4.0. This introduces pub/sub semantics to NetworkTables and adds a number of new features, including timestamped updates. Its wire protocol is also now WebSockets-based for easier use by browser applications. While most of the changes should be transparent to users who don't use the new features, there are several breaking changes. NetworkTables V3 clients are still compatible, but V2 support has been dropped.
--   Added support for `on-robot telemetry recording into data logs </docs/software/telemetry/datalog>`
+-   `NetworkTables` has been completely rewritten as version 4.0. This introduces pub/sub semantics to NetworkTables and adds a number of new features, including timestamped updates. Its wire protocol is also now WebSockets-based for easier use by browser applications. While most of the changes should be transparent to users who don't use the new features, there are several breaking changes. NetworkTables V3 clients are still compatible, but V2 support has been dropped.
+-   Added support for `on-robot telemetry recording into data log`
 -   `LiveWindow` telemetry is now disabled by default. This has been observed as a consistent source of loop overruns. Use `LiveWindow.enableAllTelemetry` to restore the previous behavior
--   `AprilTag </docs/software/vision-processing/apriltag/apriltag-intro>` library has been added
+-   `AprilTag` library has been added
 -   Bundled Java version has been bumped to 17 from 11
 -   GCC 12.1 with C++ 20 support. Visual Studio 2022 is required for running C++ Simulation on Windows
 -   CameraServer now supports USB cameras on Mac operating systems
@@ -69,7 +69,7 @@ Supported Operating Systems and Architectures:
 -   Add method to disable LW actuator control in test mode
 -   Enhanced `Sendable` representation of commands
 -   Deprecated `CommandGroupBase`; the static factories have been moved to `Commands`
--   Refactor SelectCommand's <span class="title-ref">Supplier\<Command\></span> constructor and ProxyScheduleCommand into ProxyCommand
+-   Refactor SelectCommand's supplier constructor and ProxyScheduleCommand into ProxyCommand
 -   Remove <span class="title-ref">isFinished</span> check for default commands
 -   Add method to remove default commands
 -   `Trigger` and `Button` methods were renamed to be consistent and
