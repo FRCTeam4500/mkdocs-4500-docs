@@ -7,7 +7,7 @@ hide:
 
 !!! note ""
 
-    First of all, we at the programming team would like to congratulate you on a brand new season of FRC. So glad for all that have joined back from previous years and ofcourse welcome rookies!
+    First of all, we at the programming team would like to congratulate you on a brand new season of FRC. So glad for all that have joined back from previous years and of course welcome rookies!
 
     To begin, I will introduce you to a dillema that came from an arguably rushed season in 2023, that being the lack of involvement from members on the team. For this, we apologise greatly. 
 
