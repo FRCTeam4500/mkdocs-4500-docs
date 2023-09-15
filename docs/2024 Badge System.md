@@ -31,7 +31,7 @@ hide:
 
     #### Description
 
-    As a programmer, you are proficient in reading and interpreting complex code. In order to pass, one must have the skills to read most of 2023's competition code except boilerplate files and other forms of initialization. You are also not expected to understand most of the logging structure and workflow, however, you should be familiar with it's uses in post-match analysis.
+    As a programmer, you should be able to read code. In order to pass, you need to have the skills to read most of 2023's competition code except initialization file. You need to be able to read files in the src folder. You are also not expected to understand most of the logging structure and workflow, however, you should be familiar with it's uses in post-match analysis.
 
     #### Deliverable
 
@@ -53,7 +53,7 @@ hide:
 
     In order to advance to this state, you must write clean code that runs successfully on the practice robot. The written code will have to be within specifications determined by subteam leads. This will most likely include movement and may also include a working flywheel shooter or some sort of additional control mechanism.
 
-    This code will need to include logging and possibly IO interface declarations for the logger in order to promote cleaner programming.
+    This code will need to include logging in order to promote easier-to-debug programming.
 
     The programmer is expected to provide a detailed runthrough of the program and it's features. If the available leads have questions regarding known topics, the programmer is also expected to answer appropriately. 
 
