@@ -8,11 +8,13 @@ theme:
     - navigation.tabs
     - navigation.sections
     - navigation.expand
+    - navigation.footer
     # - toc.integrate
     - toc.follow
     - navigation.top
     - pdf-export
     - search.suggest
+    - footnotes
     - search.highlight
     - content.tabs.link
     - content.code.annotation
@@ -21,16 +23,16 @@ theme:
   palette:
     - scheme: default
       toggle:
-        icon: material/toggle-switch-off-outline 
+        icon: material/brightness-7
         name: Switch to dark mode
       primary: indigo
-      accent: red 
+      accent: orange 
     - scheme: slate 
       toggle:
-        icon: material/toggle-switch
+        icon: material/brightness-5
         name: Switch to light mode    
       primary: deep purple
-      accent: lime
+      accent: orange
 
 extra:
   generator: false
@@ -52,6 +54,9 @@ markdown_extensions:
       anchor_linenums: true
   - pymdownx.inlinehilite
   - pymdownx.snippets
+  - def_list
+  - pymdownx.tasklist:
+      custom_checkbox: true
   - admonition
   - pymdownx.arithmatex:
       generic: true
@@ -67,6 +72,10 @@ markdown_extensions:
   - pymdownx.emoji:
       emoji_index: !!python/name:materialx.emoji.twemoji
       emoji_generator: !!python/name:materialx.emoji.to_svg
+
+plugins:
+  - offline:
+      enabled: !ENV [OFFLINE, false]
 
 extra_javascript:
   - scripts/mathjax.js
