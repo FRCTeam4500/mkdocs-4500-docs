@@ -1,7 +1,8 @@
 ---
 hide: 
-    - navigation
 ---
+
+# Explanation and Introduction
 
 ## Welcome Back!
 
@@ -27,23 +28,13 @@ hide:
 
 !!! abstract "Level 1"
 
-    ### 1 - Read Code
+    ### 1 - Write Code
 
     #### Description
 
-    As a programmer, you should be able to read code. In order to pass, you need to have the skills to read most of 2023's competition code except initialization file. You need to be able to read files in the src folder. You are also not expected to understand most of the logging structure and workflow, however, you should be familiar with it's uses in post-match analysis.
+    You will first learn to read code. You need to have the skills to read most of 2023's competition code except initialization file. You need to be able to read files in the src folder. You are also not expected to understand most of the logging structure and workflow, however, you should be familiar with it's uses in post-match analysis.
 
-    #### Deliverable
-
-    In order to advance to this state, you must explain selected code to the segments to available leads with accuracy and expand into the roots of why and how the program is created and used.
-
-!!! abstract "Level 2"
-
-    ### 2 - Write Code
-
-    #### Description
-
-    As a programmer, you should be able to write meaningful code in a clean and concice manner provided previous code bases as resources. This includes but is not limited by design patterns such as Singleton and Observer, and industry standard formatting of code. This also includes the use of GitHub for tracking and versioning
+    You should be able to write meaningful code in a clean and concice manner provided previous code bases as resources. This includes but is not limited by design patterns such as Singleton and Observer, and industry standard formatting of code. This also includes the use of GitHub for tracking and versioning
 
     Programming the robot, you must very well understand the robot's control flow. An example of which are the states that the robot can be in throughout the match. Methods extending the LoggedRobot framework are representations of these, providing names such as `teleopInit` or `autonomousInit`.
 
@@ -53,25 +44,33 @@ hide:
 
     In order to advance to this state, you must write clean code that runs successfully on the practice robot. The written code will have to be within specifications determined by subteam leads. This will most likely include movement and may also include a working flywheel shooter or some sort of additional control mechanism.
 
-    This code will need to include logging in order to promote easier-to-debug programming.
-
     The programmer is expected to provide a detailed runthrough of the program and it's features. If the available leads have questions regarding known topics, the programmer is also expected to answer appropriately. 
+    
+    You must explain selected code to the segments to available leads with accuracy and expand into the roots of why and how the program is created and used.
 
-!!! danger "Level 3"
+!!! abstract "Level 2"
 
-    ### 3 - Competition Readiness
+    ### 2 - Debug Code
 
     #### Description
 
     In level 3 of the programming tree, you learn competition skills that are nessesary for the programmer to help in the pits. This includes skills like preparing a radio for competition, imaging radios and rios, debugging erros in code, using software like CTRE Phoenix Tuner and REV Configuration Utility to set up motors and debug `NO ROBOT CODE` errors, and running pre-match system tests.
 
-    You are also to use Advantage Scope (NetworkTables) throughout the process to visualize robot state.
+    #### Deliverable
+
+    In order to advance to this state, you must first schedule with one of the programming leads to meet during lunch in Room 38. Once scheduled, a lead will use your code from Level 2 to prepare a testing code base. Once you come to the meeting, you will be expected to demonstrate the use of all above specified software and practices in order to transform provided code into a cleaner and more functional product. (By debugging)
+
+!!! danger "Level 3"
+
+    ### 3 - Competition Code
+
+    #### Description
+
+    You will learn how to work in a team setting and contribute to the 2024 robot code.
 
     #### Deliverables
 
-    1. Help with season code base and thoroughly understand how it works.
-
-    2. In order to advance to this state, you must first schedule with one of the programming leads to meet during lunch in Room 38. Once scheduled, a lead will use your code from Level 2 to prepare a testing code base. Once you come to the meeting, you will be expected to demonstrate the use of all above specified software and practices in order to transform provided code into a cleaner and more functional product. (By debugging)
+    Help with season code base and thoroughly understand how it works. [AUTHORED DOCUMENTATION](../Programming%20Prophecy/Best%20Practices/AuthoredDocs.md) nessesary in each component built.
 
 !!! warning "Level 4"
 
@@ -79,7 +78,7 @@ hide:
 
     #### Description
 
-    Level 4 is currently the highest tier of programming to achieve excluding leadership and subteam leads. As such, the requirements are rigorous. As a good programmer, you should be able to write original code that improves the robot. This can be like the inclusion of PathPlanner during 2023 season adding the Logger in 2023 offseason.
+    Level 4 is currently the highest tier of programming to achieve excluding leadership and subteam leads. As such, the requirements are rigorous. As a good programmer, you should be able to write original code that improves the robot. This can be like the inclusion of PathPlanner during 2023 season or adding the Logger in 2023 offseason.
 
     #### Deliverable
 
