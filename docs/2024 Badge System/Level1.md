@@ -38,6 +38,6 @@ Use the resources provided to create the attributes and methods necessary for ma
 
 Then, in the `src/main/java/frc/robot/commands/` directory, open `TankDriveCommand.java`.
 
-Inside is, once again, a constructor. Change the excecute method to specifications and add [authored documentation](../Programming%20Prophecy/Best%20Practices/AuthoredDocs.md) to everything.
+Inside is, once again, a constructor. Fill in the excecute method like the comments say and add [authored documentation](../Programming%20Prophecy/Best%20Practices/AuthoredDocs.md) to everything (All classes and methods with detailed explanations). 
 
 Once finished, bring to one of the leads, and we will get it to a coach. Once approved, you will recieve Level 1 in programming.
