@@ -38,7 +38,7 @@ Use the resources provided to create the attributes and methods necessary for ma
 !!! quote "Hint"
     [Build Night #1](/Programming Prophecy/Reflections/Build Night 9.28)
 
-    The flywheel will be more influential than the arm sine the tankdrive uses outputs instead of angle.
+    Looking over the flywheel code will be more helpful than looking at the arm code, since the flywheel uses percent output
 
 Then, in the `src/main/java/frc/robot/commands/` directory, open `TankDriveCommand.java`.
 
