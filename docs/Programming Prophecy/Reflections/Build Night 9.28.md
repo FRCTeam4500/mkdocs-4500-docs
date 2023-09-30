@@ -32,29 +32,29 @@ Guides and usages made soon, again maybe.
 ## Arm Example Code
 
 ```java title="Arm.java"
-public class Arm {
+public class Arm extends SubsystemBase { // Creates an Arm Class (1)!
 
-    private TalonComponent tiltMotor;
-    private SparkMaxComponent extentionMotor;
+    private SparkMaxComponent tiltMotor; // Declares a tiltMotor of the TalonComponent class (2)!
+    private TalonComponent extentionMotor; // Declares an extentionMotor of the SparkMaxComponent Class (3)!
     private double targetTiltAngle;
     private double targetExtention;
 
     /**
      * Constructor for the arm.
      * Initializes motors
-     * @author Saaleh Poovathumkadavil
+     * @author Saaleh Poovathumkadavil // (4)
      */
-    public Arm() {
-        this.tiltMotor = new TalonComponent(1, "TalonSRX");
-        this.extentionMotor = new SparkMaxComponent(2, MotorType.kBrushless);
+    public Arm() { // (5)
+        this.extentionMotor = new TalonComponent(1, TalonMotor.TalonSRX); // (6)!
+        this.tiltMotor = new SparkMaxComponent(2, MotorType.kBrushless); // (7)1
     }
 
-    public void setTilt(double tiltAngle) {
+    public void setTilt(double tiltAngle) { // (8)!
         targetTiltAngle = tiltAngle;
         tiltMotor.setAngle(tiltAngle);
     }
 
-    public double getTilt() {
+    public double getTilt() { // (9)!
         return targetTiltAngle;
     }
 
@@ -68,10 +68,26 @@ public class Arm {
     }
 
     @Override
-    public void initSendable(SendableBuilder builder) {
-        builder.addDoubleProperty("Target Tilt Angle", () => targetTiltAngle, null);
+    public void initSendable(SendableBuilder builder) { // (10)
+        builder.addDoubleProperty("Target Tilt Angle", () => targetTiltAngle, null); // (11)!
         builder.addDoubleProperty("Target Extionsion", () => targetExtention, null);
     }
 
 }
 ```
+
+1.  In this case, we are creating a Arm Subsystem. 
+    The `SubsystemBase` is a class provided by WPILib that we can extend.
+    By doing so, we can ensure that the `Arm` Class has every attribute and method
+    of the `SubsystemBase` class.
+
+2.  The 2023 Robot, Dwayne The Bot Johnson, uses a NEO motor for Tilt.
+    This motor is controlled by a Spark Max motor controller.
+    Our implementation of this is in the file `SparkMaxComponent`
+    which extends `CANSparkMax`
+
+3.  The 2023 Robot, Dwayne The Bot Johnson, uses a 775pro motor for Tilt.
+    This motor is controlled by a Talon SRX controller.
+    Our implementation of this is in the file `TalonComponent`
+    which extends `BaseTalon`. This can translate to Talon FX Controllers as well,
+    needs specification in TalonMotor enum.
