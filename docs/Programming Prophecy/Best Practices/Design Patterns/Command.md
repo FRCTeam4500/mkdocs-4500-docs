@@ -33,4 +33,3 @@ public class MyCommand extends CommandBase { // Sendable and Command
     }
 }
 ```
-![Alt text](https://refactoring.guru/images/patterns/diagrams/observer/structure.png)
