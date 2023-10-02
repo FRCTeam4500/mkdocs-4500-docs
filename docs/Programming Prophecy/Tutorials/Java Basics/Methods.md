@@ -1,0 +1,1 @@
+A method is a block of code that does something.
