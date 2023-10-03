@@ -17,9 +17,22 @@ The String keyword is used to represent a collection of characters, or a word. S
 ### How to Use primitives
 The main differences between primitives and objects is how they are created. primitives don't need to be created via a constructor. Instead they can just be assigned a value. 
 
-Examples: \
-`int age = 5;` \
-`boolean trustworthy = false;`\
-`double timeSeconds = 0.5;`\
-`String name = "Bob";`\
-Notice how Strings can be assigned a value just like the other primitives.
+!!! warning "Examples:"
+
+    ```java 
+    int age = 5;
+    ```
+
+    ```java
+    boolean trustworthy = false;
+    ```
+
+    ```java
+    double timeSeconds = 0.5;
+    ```
+
+    ```java
+    String name = "Bob";
+    ```
+
+    Notice how Strings can be assigned a value just like the other primitives. Althrough it is a class, you dont have to specify `new String()`.
