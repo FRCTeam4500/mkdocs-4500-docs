@@ -1,0 +1,2083 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../../Getting%20Started/software-guide/">
+      
+      
+        <link rel="next" href="../knownissues/">
+      
+      
+      <link rel="icon" href="../../assets/logo_noblue.svg">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.4.14">
+    
+    
+      
+        <title>New for 2023 - 4500 Documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.fad675c6.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.356b1318.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="orange">
+  
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#new-for-2023" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="https://frcteam4500.github.io/" title="4500 Documentation" class="md-header__button md-logo" aria-label="4500 Documentation" data-md-component="logo">
+      
+  <img src="../../assets/logo_transparent.svg" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            4500 Documentation
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              New for 2023
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="orange"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="deep-purple" data-md-color-accent="orange"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_2">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-2.69L23.31 12 20 8.69V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69Z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://www.github.com/FRCTeam4500/mkdocs-4500-docs" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    mkdocs-4500-docs
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+    
+  
+  Team 4500
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../2024%20Badge%20System/2024%20Badge%20System/" class="md-tabs__link">
+          
+  
+  2024 Badge System
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../Getting%20Started/software-guide/" class="md-tabs__link">
+          
+  
+  Getting Started
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="./" class="md-tabs__link">
+          
+  
+  Programming Prophecy
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="https://frcteam4500.github.io/" title="4500 Documentation" class="md-nav__button md-logo" aria-label="4500 Documentation" data-md-component="logo">
+      
+  <img src="../../assets/logo_transparent.svg" alt="logo">
+
+    </a>
+    4500 Documentation
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://www.github.com/FRCTeam4500/mkdocs-4500-docs" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    mkdocs-4500-docs
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Team 4500
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+      
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    2024 Badge System
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            2024 Badge System
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2024%20Badge%20System/2024%20Badge%20System/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Explanation and Introduction
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2024%20Badge%20System/Level1/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Level 1 - Write Code
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2024%20Badge%20System/Level2/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Level 2 - Debug Code
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2024%20Badge%20System/Level3/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Level 3 - Competition Code
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2024%20Badge%20System/Level4/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Level 4 - Revolution
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+      
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Getting Started
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Getting Started
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Getting%20Started/software-guide/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Team Wide Software Guide
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+      
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Programming Prophecy
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Programming Prophecy
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    New for 2023
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    New for 2023
+  </span>
+  
+
+      </a>
+      
+        
+
+  
+
+<nav class="md-nav md-nav--secondary" aria-label="On this page">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      On this page
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#importing-projects-from-previous-years" class="md-nav__link">
+    <span class="md-ellipsis">
+      Importing Projects from Previous Years
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#major-changes-javac" class="md-nav__link">
+    <span class="md-ellipsis">
+      Major Changes (Java/C++)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#wpilib" class="md-nav__link">
+    <span class="md-ellipsis">
+      WPILib
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="WPILib">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#general-library" class="md-nav__link">
+    <span class="md-ellipsis">
+      General Library
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#breaking-changes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Breaking Changes
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#simulation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Simulation
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#shuffleboard" class="md-nav__link">
+    <span class="md-ellipsis">
+      Shuffleboard
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#smartdashboard" class="md-nav__link">
+    <span class="md-ellipsis">
+      SmartDashboard
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#glass" class="md-nav__link">
+    <span class="md-ellipsis">
+      Glass
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pathweaver" class="md-nav__link">
+    <span class="md-ellipsis">
+      PathWeaver
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#gradlerio" class="md-nav__link">
+    <span class="md-ellipsis">
+      GradleRIO
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cscore" class="md-nav__link">
+    <span class="md-ellipsis">
+      cscore
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#outlineviewer" class="md-nav__link">
+    <span class="md-ellipsis">
+      OutlineViewer
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#wpilib-all-in-one-installer" class="md-nav__link">
+    <span class="md-ellipsis">
+      WPILib All in One Installer
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#visual-studio-code-extension" class="md-nav__link">
+    <span class="md-ellipsis">
+      Visual Studio Code Extension
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#robotbuilder" class="md-nav__link">
+    <span class="md-ellipsis">
+      RobotBuilder
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sysid" class="md-nav__link">
+    <span class="md-ellipsis">
+      SysID
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#romi" class="md-nav__link">
+    <span class="md-ellipsis">
+      Romi
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../knownissues/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Known Issues for 2023
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+      
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_3" id="__nav_4_3_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Best Practices
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_3">
+            <span class="md-nav__icon md-icon"></span>
+            Best Practices
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Best%20Practices/AuthoredDocs/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Authored Documentation
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4_3_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_3_2" id="__nav_4_3_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Design Patterns
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_4_3_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_3_2">
+            <span class="md-nav__icon md-icon"></span>
+            Design Patterns
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Best%20Practices/Design%20Patterns/Command/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Command
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Best%20Practices/Design%20Patterns/Factory/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Factory
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Best%20Practices/Design%20Patterns/Observer/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Observer
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Best%20Practices/Design%20Patterns/Singleton/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Singleton
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+      
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_4" id="__nav_4_4_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Math
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_4">
+            <span class="md-nav__icon md-icon"></span>
+            Math
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Math/eulerangles/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Euler's Angles
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Math/pid/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    PID
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+      
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_5" id="__nav_4_5_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Reflections
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_5">
+            <span class="md-nav__icon md-icon"></span>
+            Reflections
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Reflections/Build%20Night%209.28/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    First Build Night 2023
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+      
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_6" id="__nav_4_6_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Tutorials
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_6">
+            <span class="md-nav__icon md-icon"></span>
+            Tutorials
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4_6_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_6_1" id="__nav_4_6_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Java Basics
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_4_6_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_6_1">
+            <span class="md-nav__icon md-icon"></span>
+            Java Basics
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Tutorials/Java%20Basics/Classes/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Classes
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Tutorials/Java%20Basics/Crash%20Course/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Crash Course
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Tutorials/Java%20Basics/Methods/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Methods
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Tutorials/Java%20Basics/Primitives/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Primitives
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+      
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_7" id="__nav_4_7_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    WPIlib
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_7">
+            <span class="md-nav__icon md-icon"></span>
+            WPIlib
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../WPIlib/motorcontroller/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Motor Controllers
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+  
+
+<nav class="md-nav md-nav--secondary" aria-label="On this page">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      On this page
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#importing-projects-from-previous-years" class="md-nav__link">
+    <span class="md-ellipsis">
+      Importing Projects from Previous Years
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#major-changes-javac" class="md-nav__link">
+    <span class="md-ellipsis">
+      Major Changes (Java/C++)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#wpilib" class="md-nav__link">
+    <span class="md-ellipsis">
+      WPILib
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="WPILib">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#general-library" class="md-nav__link">
+    <span class="md-ellipsis">
+      General Library
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#breaking-changes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Breaking Changes
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#simulation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Simulation
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#shuffleboard" class="md-nav__link">
+    <span class="md-ellipsis">
+      Shuffleboard
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#smartdashboard" class="md-nav__link">
+    <span class="md-ellipsis">
+      SmartDashboard
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#glass" class="md-nav__link">
+    <span class="md-ellipsis">
+      Glass
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pathweaver" class="md-nav__link">
+    <span class="md-ellipsis">
+      PathWeaver
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#gradlerio" class="md-nav__link">
+    <span class="md-ellipsis">
+      GradleRIO
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cscore" class="md-nav__link">
+    <span class="md-ellipsis">
+      cscore
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#outlineviewer" class="md-nav__link">
+    <span class="md-ellipsis">
+      OutlineViewer
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#wpilib-all-in-one-installer" class="md-nav__link">
+    <span class="md-ellipsis">
+      WPILib All in One Installer
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#visual-studio-code-extension" class="md-nav__link">
+    <span class="md-ellipsis">
+      Visual Studio Code Extension
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#robotbuilder" class="md-nav__link">
+    <span class="md-ellipsis">
+      RobotBuilder
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sysid" class="md-nav__link">
+    <span class="md-ellipsis">
+      SysID
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#romi" class="md-nav__link">
+    <span class="md-ellipsis">
+      Romi
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<h1 id="new-for-2023">New for 2023<a class="headerlink" href="#new-for-2023" title="Permanent link">&para;</a></h1>
+<p>A number of improvements have been made to FRC Control System software for 2023. This article will describe and provide a brief overview of the new changes and features as well as a more complete changelog for Java/C++ WPILib changes. This document only includes the most relevant changes for end users, the full list of changes can be viewed on the various <a href="https://github.com/wpilibsuite/">WPILib</a> GitHub repositories.</p>
+<p>It's recommended to also review the list of <code>known issues &lt;known-issues&gt;</code>.</p>
+<h2 id="importing-projects-from-previous-years">Importing Projects from Previous Years<a class="headerlink" href="#importing-projects-from-previous-years" title="Permanent link">&para;</a></h2>
+<p>Due to internal GradleRIO changes, it is necessary to update projects from previous years. After <code>Installing WPILib for 2023</code>, any 2022 projects must be <code>imported</code> to be compatible.</p>
+<h2 id="major-changes-javac">Major Changes (Java/C++)<a class="headerlink" href="#major-changes-javac" title="Permanent link">&para;</a></h2>
+<p>These changes contain <em>some</em> of the major changes to the library that it's important for the user to recognize. This does not include all of the breaking changes, see the other sections of this document for more changes.</p>
+<ul>
+<li><code>NetworkTables</code> has been completely rewritten as version 4.0. This introduces pub/sub semantics to NetworkTables and adds a number of new features, including timestamped updates. Its wire protocol is also now WebSockets-based for easier use by browser applications. While most of the changes should be transparent to users who don't use the new features, there are several breaking changes. NetworkTables V3 clients are still compatible, but V2 support has been dropped.</li>
+<li>Added support for <code>on-robot telemetry recording into data log</code></li>
+<li><code>LiveWindow</code> telemetry is now disabled by default. This has been observed as a consistent source of loop overruns. Use <code>LiveWindow.enableAllTelemetry</code> to restore the previous behavior</li>
+<li><code>AprilTag</code> library has been added</li>
+<li>Bundled Java version has been bumped to 17 from 11</li>
+<li>GCC 12.1 with C++ 20 support. Visual Studio 2022 is required for running C++ Simulation on Windows</li>
+<li>CameraServer now supports USB cameras on Mac operating systems</li>
+</ul>
+<p>Supported Operating Systems and Architectures:<br />
+-   Windows 10 &amp; 11, 64 bit. 32 bit and Arm are not supported
+-   Ubuntu 22.04, 64 bit. Other Linux distributions with glibc &gt;= 2.32 may work, but are unsupported
+-   macOS 11 or later, Intel and Arm.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>The following OSes are no longer supported: macOS 10.15, Ubuntu 18.04 &amp; 20.04, Windows 7, Windows 8.1, and any 32-bit Windows.</p>
+</div>
+<h2 id="wpilib">WPILib<a class="headerlink" href="#wpilib" title="Permanent link">&para;</a></h2>
+<h3 id="general-library">General Library<a class="headerlink" href="#general-library" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Deprecated <code>PerpetualCommand</code>/<code>perpetually()</code>, use <code>RepeatCommand</code>/<code>repeatedly()</code> instead</li>
+<li>Renamed <code>withInterrupt(BooleanSupplier)</code> to <code>until()</code></li>
+<li>Added <code>InterpolatedTreeMap</code></li>
+<li>Added <code>RepeatCommand</code> and matching <code>repeatedly</code> decorator</li>
+<li>Added <code>unless(BooleanSupplier)</code> decorator</li>
+<li>Added <code>ignoringDisable(boolean)</code> decorator to set the <code>runsWhenDisabled</code> property of a command</li>
+<li>Added <code>finallyDo(BooleanConsumer)</code> and <code>handleInterrupt(Runnable)</code> decorators</li>
+<li>Added static command factories in Commands</li>
+<li>Added <code>ComputerVisionUtil</code></li>
+<li>Added <code>EventLoop</code> and <code>BooleanEvent</code>, an expansion of the existing Trigger framework encompassing non-commandbased</li>
+<li>Added <code>BooleanEvent</code>-returning factory methods to the HID classes</li>
+<li>Added command-based versions of HID classes (<code>CommandXboxController</code> etc.) with <code>Trigger</code>-returning factory methods</li>
+<li>Added LTV unicycle controllers</li>
+<li>Added <code>Rotation2d</code> factory method that uses rotations and radians; <code>fromRotations()</code> and <code>fromRadians()</code></li>
+<li><code>HolonomicDriveController</code> now uses continuous input on heading PID</li>
+<li>Added various 3d geometry classes<ul>
+<li><code>Pose3d</code></li>
+<li><code>Quaternion</code></li>
+<li><code>Rotation3d</code></li>
+<li><code>Transform3d</code></li>
+<li><code>Translation3d</code></li>
+<li><code>Twist3d</code></li>
+<li><code>CoordinateAxis</code></li>
+<li><code>CoordinateSystem</code></li>
+</ul>
+</li>
+<li>Added various pneumatic sim classes<ul>
+<li><code>CTREPCMSim</code></li>
+<li><code>DoubleSolenoidSim</code></li>
+<li><code>REVPHSim</code></li>
+<li><code>SolenoidSim</code></li>
+</ul>
+</li>
+<li>Added <code>getAngle()</code> to <code>Translation2d</code></li>
+<li>Deprecated <code>Compressor.enable()</code>. Use <code>isEnabled</code> instead</li>
+<li>Add missing <code>PS4Controller</code> triangle methods</li>
+<li>Add method to disable LW actuator control in test mode</li>
+<li>Enhanced <code>Sendable</code> representation of commands</li>
+<li>Deprecated <code>CommandGroupBase</code>; the static factories have been moved to <code>Commands</code></li>
+<li>Refactor SelectCommand's supplier constructor and ProxyScheduleCommand into ProxyCommand</li>
+<li>Remove <span class="title-ref">isFinished</span> check for default commands</li>
+<li>Add method to remove default commands</li>
+<li><code>Trigger</code> and <code>Button</code> methods were renamed to be consistent and
+    <code>Button</code> class deprecated.<ul>
+<li><code>Trigger</code>'s bindings are changed to use <code>True</code>/<code>False</code> terminology, as it should be unambiguous. Each binding type has both <code>True</code> and <code>False</code> variants; for brevity, only the <code>True</code> variants are listed here:<ul>
+<li><code>onTrue</code> (replaces <code>whenActive</code> and <code>whenPressed</code>): schedule on rising edge.</li>
+<li><code>whileTrue</code> (replaces <code>whileActiveOnce</code>): schedule on rising edge, cancel on falling edge.</li>
+<li><code>toggleOnTrue</code> (replaces <code>toggleWhenActive</code>): on rising edge, schedule if unscheduled and cancel if scheduled.</li>
+</ul>
+</li>
+<li>Two binding types are completely deprecated:<ul>
+<li><code>cancelWhenActive</code>: this is a fairly niche use case which is better described as having the trigger's rising edge (<code>Trigger.rising()</code>) as an end condition for the command (using <code>Command.until()</code>).</li>
+<li><code>whileActiveContinuously</code>: however common, this relied on the no-op behavior of scheduling an already-scheduled command. The more correct way to repeat the command if it ends before the falling edge is using <code>Command.repeatedly</code>/<code>RepeatCommand</code> or a <code>RunCommand</code> -- the only difference is if the command is interrupted, but that is more likely to result in two commands perpetually canceling each other than achieve the desired behavior. Manually implementing a blindly-scheduling binding like <code>whileActiveContinuously</code> is still possible, though might not be intuitive.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Precompile common template instantiations to improve C++ compile times.</li>
+</ul>
+<h3 id="breaking-changes">Breaking Changes<a class="headerlink" href="#breaking-changes" title="Permanent link">&para;</a></h3>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>The 2023 release no longer includes the old command-based framework. Users must refactor existing code to use the new <code>command-based framework &lt;/docs/software/commandbased/index&gt;</code></p>
+</div>
+<div class="admonition danger">
+<p class="admonition-title">Danger</p>
+<p>Updated <code>DifferentialDrive</code> and <code>MecanumDrive</code> classes to use North-West-Up axis conventions to match the rest of WPILib. The Z-axis (i.e. turning) will need to be inverted to restore the old behavior.</p>
+</div>
+<ul>
+<li>
+<p>NetworkTables 4.0 (NT4) introduced several breaking changes. Shuffleboard classes now return <code>GenericEntry</code> instead of <code>NetworkTableEntry</code>; as <code>GenericEntry</code> provides nearly all the same methods, a simple textual replacement of the class name should suffice. Also, the <code>force</code> setters have been removed. See the <code>NT4 migration guide &lt;/docs/software/networktables/nt4-migration-guide&gt;</code> for more information.</p>
+</li>
+<li>
+<p>Removed deprecated <code>MakeMatrix()</code> from <code>StateSpaceUtil</code></p>
+</li>
+<li>
+<p>Removed deprecated <code>KilloughDrive</code> class</p>
+</li>
+<li>
+<p>Removed <code>Vector2d</code>, which was an implementation detail of MecanumDrive and KilloughDrive. In Java, use <code>Vector&lt;N2&gt;</code> (<code>edu.wpi.first.math.Vector</code>) or <code>Translation2d</code> (<code>edu.wpi.first.math.geometry.Translation2d</code>) instead. In C++, use <code>Eigen::Vector2d</code> from <code>&lt;Eigen/Core&gt;</code> or <code>Translation2d</code> from <code>&lt;frc/geometry/Translation2d.h&gt;</code> instead.</p>
+</li>
+<li>
+<p>Removed deprecated <code>SpeedController</code> and <code>SpeedControllerGroup</code> classes. Use MotorController and MotorControllerGroup instead</p>
+</li>
+<li>
+<p>Removed deprecated <code>MatrixUtils</code> class</p>
+</li>
+<li>
+<p>Removed various deprecated overloads that used above mentioned classes</p>
+</li>
+<li>
+<p>Removed various deprecated <code>getInstance()</code> functions. Static functions are available instead</p>
+</li>
+<li>
+<p>Removed various deprecated functions in <code>SimDevice</code></p>
+</li>
+<li>
+<p>Refactored command <code>interruptible</code> to be an enum property (<code>getInterruptionBehavior()</code>) of the command object rather than a boolean flag when scheduling; the <code>withInterruptBehavior(InterruptBehavior)</code> decorator can be used to set this property</p>
+</li>
+<li>
+<p>Command lifecycle methods of command groups cannot be overridden</p>
+</li>
+<li>
+<p>[C++ only] Command Decorators changed to return <code>CommandPtr</code> -- a new move-only value type for holding commands</p>
+</li>
+<li>
+<p><code>SwerveDriveOdometry</code> and <code>SwerveDrivePoseEstimator</code> now use wheel distances instead of wheel speeds; Use <code>SwerveModulePosition</code> to represent a swerve module's angle and distance driven.</p>
+</li>
+<li>
+<p><code>SwerveDriveOdometry</code> and <code>SwerveDrivePoseEstimator</code> now take in the wheel distances in an array rather than as a variadic parameter.</p>
+</li>
+<li>
+<p><code>MecanumDriveOdometry</code> and <code>MecanumDrivePoseEstimator</code> now use wheel distances instead of wheel speeds; Use <code>MecanumDriveWheelPositions</code> to represent the wheel distances.</p>
+</li>
+<li>
+<p>Constructors and <code>resetPosition</code> methods on all odometry and pose estimation classes now have mandatory wheel distance parameters.</p>
+</li>
+<li>
+<p>Odometry and pose estimator constructor and function arguments have been rearranged to be consistent between implementations. Users should consult the API documentation for the particular class they're using and update the method calls accordingly.</p>
+</li>
+<li>
+<p>Removed wpi versions of C++20 methods</p>
+<ul>
+<li>Use <code>std::numbers</code> instead of <code>wpi::numbers</code> (include <code>&lt;numbers&gt;</code>)</li>
+<li>Use <code>std::span</code> instead of <code>wpi::span</code> (include <code>&lt;span&gt;</code>)</li>
+</ul>
+</li>
+<li>
+<p>Removed template argument from <code>ElevatorFeedforward</code> in C++.</p>
+</li>
+</ul>
+<h2 id="simulation">Simulation<a class="headerlink" href="#simulation" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Added precision setting for NetworkTables decimal values</li>
+<li>Added docking support for GUI elements</li>
+<li>Save secondary Y axis in plots</li>
+</ul>
+<h2 id="shuffleboard">Shuffleboard<a class="headerlink" href="#shuffleboard" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Added vertical orientation option to number bar widget</li>
+<li>Fixed Field2d widget not auto populating</li>
+<li>Update PowerDistribution Widget to support 24 channels</li>
+<li>Added 2023 Charged Up field image</li>
+<li>Update PID widget to remove features no longer supported by PIDController (kF and enable)</li>
+</ul>
+<h2 id="smartdashboard">SmartDashboard<a class="headerlink" href="#smartdashboard" title="Permanent link">&para;</a></h2>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>SmartDashboard is not supported on Apple Silicon (Arm64) Macs.</p>
+</div>
+<ul>
+<li>Update PowerDistribution Widget to support 24 channels</li>
+<li>Add option to clear all plots</li>
+<li>Update PID widget to remove features no longer supported by PIDController (kF and enable)</li>
+</ul>
+<h2 id="glass">Glass<a class="headerlink" href="#glass" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Added precision setting for NetworkTables decimal values</li>
+<li>Added docking support for GUI elements</li>
+<li>Save secondary Y axis in plots</li>
+</ul>
+<h2 id="pathweaver">PathWeaver<a class="headerlink" href="#pathweaver" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Added 2023 Charged Up field image</li>
+</ul>
+<h2 id="gradlerio">GradleRIO<a class="headerlink" href="#gradlerio" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Upgrade to Gradle 7.5.1</li>
+<li>Fixed issue where start-up scripts could get damaged if roboRIO powered off during deploy</li>
+</ul>
+<h2 id="cscore">cscore<a class="headerlink" href="#cscore" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Update to opencv 4.6.0</li>
+<li>Added ArUco module</li>
+</ul>
+<h2 id="outlineviewer">OutlineViewer<a class="headerlink" href="#outlineviewer" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Added precision setting for NetworkTables decimal values</li>
+</ul>
+<h2 id="wpilib-all-in-one-installer">WPILib All in One Installer<a class="headerlink" href="#wpilib-all-in-one-installer" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Apple Silicon (Arm64) Macs are now supported</li>
+<li>Update to VS Code 1.74</li>
+<li>Update to use .NET 7</li>
+<li>Add links to changelog and known issues</li>
+</ul>
+<h2 id="visual-studio-code-extension">Visual Studio Code Extension<a class="headerlink" href="#visual-studio-code-extension" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Update templates to JUnit 5.8.2</li>
+<li>Add copy button from project versions dialog</li>
+<li>Allow importing Romi projects</li>
+</ul>
+<h2 id="robotbuilder">RobotBuilder<a class="headerlink" href="#robotbuilder" title="Permanent link">&para;</a></h2>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>With the removal of old command-based, the legacy RobotBuilder install has been removed.</p>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Due to project file changes, Robotbuilder will not import yaml save files from 2022 or earlier.</p>
+</div>
+<ul>
+<li>Add support for <code>DoubleSupplier</code> and <code>std::function&lt;double&gt;</code> parameters</li>
+<li>Add option to put commands tied to Joystick Buttons to SmartDashboard</li>
+<li>Add PS4 Controller</li>
+<li>Validate Team Number</li>
+</ul>
+<h2 id="sysid">SysID<a class="headerlink" href="#sysid" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Added Pigeon 2 support</li>
+<li>User can now specify a measurement delay of 0</li>
+<li>Fixed <code>Override Units</code> option not overriding units per rotations</li>
+</ul>
+<h2 id="romi">Romi<a class="headerlink" href="#romi" title="Permanent link">&para;</a></h2>
+<ul>
+<li>No major changes</li>
+</ul>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var tab,labels=set.querySelector(".tabbed-labels");for(tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../../Getting%20Started/software-guide/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Team Wide Software Guide">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                Team Wide Software Guide
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../knownissues/" class="md-footer__link md-footer__link--next" aria-label="Next: Known Issues for 2023">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                Known Issues for 2023
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      &copy; 2023 <a href="https://github.com/FRCTeam4500"  target="_blank" rel="noopener">FRC Team 4500</a>
+    </div>
+  
+  
+</div>
+      
+        <div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://github.com/FRCTeam4500" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://www.instagram.com/team4500/" target="_blank" rel="noopener" title="www.instagram.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://www.robohounds.com/" target="_blank" rel="noopener" title="www.robohounds.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M1 3v18h22V3H1m20 2v9H3V5h18M11 16v3H8v-3h3m-8 0h3v3H3v-3m10 3v-3h3v3h-3m5 0v-3h3v3h-3Z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.sections", "navigation.expand", "navigation.footer", "toc.follow", "navigation.top", "pdf-export", "footnotes", "search.suggest", "search.highlight", "content.tabs.link", "content.code.annotation", "content.code.annotate", "content.code.copy"], "search": "../../assets/javascripts/workers/search.f886a092.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.cd18aaf1.min.js"></script>
+      
+        <script src="../../scripts/mathjax.js"></script>
+      
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>
